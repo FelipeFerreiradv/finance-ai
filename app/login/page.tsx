@@ -8,7 +8,7 @@ import { redirect } from 'next/navigation';
 const LoginPage = async () => {
   const { userId } = await auth();
   if (userId) {
-    redirect('/dashboard?month=12');
+    redirect('/dashboard?month=11');
   }
 
   return (

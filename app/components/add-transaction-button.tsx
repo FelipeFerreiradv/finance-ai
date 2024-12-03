@@ -29,11 +29,7 @@ const AddTransactionButton = ({
               variant={'outline'}
               className="w-[180px] h-[35px] rounded-full font-bold bg-[#55B02E]"
               onClick={() => setDialogOpen(true)}
-              disabled={
-                userCanAddTransaction === undefined
-                  ? true
-                  : !userCanAddTransaction
-              }
+              disabled={!userCanAddTransaction}
             >
               Adicionar Transação
               <ArrowDownUpIcon />

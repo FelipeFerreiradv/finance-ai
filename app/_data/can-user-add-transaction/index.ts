@@ -10,8 +10,8 @@ export const canUserAddTransaction = async () => {
   if ((await user).publicMetadata.subscriptionPlan === 'Premium') {
     return true;
   }
-  const currentMonthTRansactions = await getCurrentMonthTransactions();
 
+  const currentMonthTRansactions = await getCurrentMonthTransactions();
   if (currentMonthTRansactions >= 10) {
     return false;
   }

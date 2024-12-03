@@ -73,7 +73,7 @@ const SummaryCard = async ({ month, userCanAddTransaction }: SummaryCards) => {
           />
           <SummaryCards
             icon={<TrendingDown className="text-red-500" />}
-            title="Despesa"
+            title="Despeza"
             amount={expenseTotal}
             size="small"
             bg="flex items-center justify-center w-[36px] h-[36px] p-[10px] rounded-[8px] bg-[#F6352E14]"

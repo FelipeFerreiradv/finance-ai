@@ -1,3 +1,4 @@
+import { canUserAddTransaction } from '@/app/_data/can-user-add-transaction';
 import { db } from '@/app/_lib/prisma';
 import AddTransactionButton from '@/app/components/add-transaction-button';
 import { Eye, Wallet } from 'lucide-react';
@@ -7,10 +8,7 @@ interface SummaryCards {
   userCanAddTransaction?: boolean;
 }
 
-const SummaryCardLarge = async ({
-  month,
-  userCanAddTransaction,
-}: SummaryCards) => {
+const SummaryCardLarge = async ({ month }: SummaryCards) => {
   // Obter os dados do dashboard utilizando o mês
   const where = {
     date: {
@@ -45,8 +43,7 @@ const SummaryCardLarge = async ({
   );
   const balance = depositTotal - expenseTotal - investimentTotal;
 
-  // const userCanAddTransaction = await canUserAddTransaction();
-
+  const userCanAddTransaction = await canUserAddTransaction();
   return (
     <div className="relative flex justify-between w-full h-[160px] px-[2rem] py-[2.5rem] rounded-[20px] border bg-[#FFFFFF14]">
       <div className="flex flex-col justify-between gap-[1rem]">

@@ -81,7 +81,6 @@ const SummaryCard = async ({ month, userCanAddTransaction }: SummaryCards) => {
         </div>
         <div className="flex gap-8">
           <PieChartTransaction {...dashboard} />{' '}
-          {/* Passando os dados do dashboard para o PieChartTransaction */}
           <ExpensesPerCategory
             expensePerCategory={dashboard.totalExpensePerCategory}
           />

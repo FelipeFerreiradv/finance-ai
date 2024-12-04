@@ -13,7 +13,7 @@ interface SummaryCardsProps {
 const SummaryCards = ({ icon, title, amount, size, bg }: SummaryCardsProps) => {
   return (
     <div
-      className={`${size != 'small' ? 'flex flex-col justify-center px-[2rem] gap-2 w-1/2 h-[130px] border rounded-[20px] bg-[#181818] max-lg:w-[86%]' : 'flex flex-col justify-center px-[2rem] gap-2 w-1/2 h-[130px] border rounded-[20px] bg-transparent max-lg:w-[86%]'}`}
+      className={`${size != 'small' ? 'flex flex-col justify-center px-[2rem] gap-2 w-1/2 h-[130px] border rounded-[20px] bg-[#181818]' : 'flex flex-col justify-center px-[2rem] gap-2 w-1/2 h-[130px] border rounded-[20px] bg-transparent'}`}
     >
       <div className="flex items-center gap-2">
         <div className={bg}>{icon}</div>

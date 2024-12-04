@@ -51,12 +51,12 @@ const SummaryCard = async ({ month, userCanAddTransaction }: SummaryCards) => {
 
   return (
     <div className="flex flex-col gap-8 w-[150%] mx-[2rem]">
-      <div className="flex flex-col gap-2 max-lg:w-screen">
+      <div className="flex flex-col gap-2">
         <SummaryCardLarge
           month={month}
           userCanAddTransaction={userCanAddTransaction}
         />
-        <div className="flex items-center gap-6 w-full my-6 max-lg:flex-wrap">
+        <div className="flex items-center gap-6 w-full my-6">
           <SummaryCards
             icon={<PiggyBankIcon />}
             title="Investido"
@@ -79,7 +79,7 @@ const SummaryCard = async ({ month, userCanAddTransaction }: SummaryCards) => {
             bg="flex items-center justify-center w-[36px] h-[36px] p-[10px] rounded-[8px] bg-[#F6352E14]"
           />
         </div>
-        <div className="flex gap-8 max-lg:flex-wrap">
+        <div className="flex gap-8">
           <PieChartTransaction {...dashboard} />{' '}
           <ExpensesPerCategory
             expensePerCategory={dashboard.totalExpensePerCategory}

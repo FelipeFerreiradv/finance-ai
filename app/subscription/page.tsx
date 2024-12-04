@@ -22,9 +22,9 @@ const SubscriptionPage = async () => {
 
       <section className="flex flex-col m-10">
         <h1 className="font-bold text-[24px]">Assinatura</h1>
-        <div className="flex items-center gap-6 max-lg:flex-col">
+        <div className="flex items-center gap-6">
           <div className="flex items-center gap-4">
-            <div className="relative flex flex-col w-[450px] h-[475px] border rounded-[8px] my-8 max-sm:w-[350px] max-sm:h-[430px]">
+            <div className="relative flex flex-col w-[450px] h-[475px] border rounded-[8px] my-8">
               <div className="flex flex-col items-center justify-center my-10">
                 <h2 className="font-normal text-[24px]">Plano Básico</h2>
                 <div className="flex items-center gap-3">
@@ -68,7 +68,7 @@ const SubscriptionPage = async () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="relative flex flex-col w-[450px] h-[475px] border rounded-[8px] my-8 max-sm:w-[350px] max-sm:h-[470px]">
+            <div className="relative flex flex-col w-[450px] h-[475px] border rounded-[8px] my-8">
               <div className="flex flex-col items-center justify-center my-10">
                 {hasPremiumPlan && (
                   <div className="absolute flex items-center justify-center left-8 top-12 w-[67px] h-[28px] rounded-full text-[16px] text-[#55B02E] bg-[#55B02E14]">

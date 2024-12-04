@@ -58,7 +58,7 @@ const PieChartTransaction = ({
     },
   ];
   return (
-    <Card className="flex flex-col w-1/2 h-[550px] rounded-[20px] max-lg:w-[86%]">
+    <Card className="flex flex-col w-1/2 h-[550px] rounded-[20px]">
       <CardContent className="flex-1 pb-0">
         <ChartContainer
           config={chartConfig}

@@ -25,7 +25,7 @@ const AcquirePlanButton = () => {
   if (hasPremiumPlan) {
     return (
       <Button
-        className="flex items-center justify-center w-[370px] h-[45px] mb-4 border-[.1px] rounded-full text-[14px] text-white bg-[#55B02E] hover:bg-[#55B02E] max-sm:w-[300px]"
+        className="flex items-center justify-center w-[370px] h-[45px] mb-4 border-[.1px] rounded-full text-[14px] text-white bg-[#55B02E] hover:bg-[#55B02E]"
         variant="link"
       >
         <Link
@@ -38,7 +38,7 @@ const AcquirePlanButton = () => {
   }
   return (
     <Button
-      className="flex items-center justify-center w-[370px] h-[45px] mb-4 border-[.1px] rounded-full text-[14px] text-white bg-[#55B02E] hover:bg-[#55B02E] max-sm:w-[300px]"
+      className="flex items-center justify-center w-[370px] h-[45px] mb-4 border-[.1px] rounded-full text-[14px] text-white bg-[#55B02E] hover:bg-[#55B02E]"
       onClick={handleAcquirePlanClick}
     >
       Adquirir plano

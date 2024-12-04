@@ -40,7 +40,7 @@ const LastTransactions = ({ lastTransactions = [] }: LastTransactionsProps) => {
     }
   };
   return (
-    <ScrollArea className="w-1/2 border rounded-[20px] p-10 mr-[2rem] max-lg:mx-[2rem] max-lg:mb-[2rem] max-lg:w-[86%]">
+    <ScrollArea className="w-1/2 border rounded-[20px] p-10 mr-[2rem]">
       <div className="flex items-center justify-between">
         <h1 className="font-bold text-[18px]">Transações</h1>
         <Button

@@ -35,7 +35,7 @@ const DashboardPage = async ({ searchParams }: PageProps) => {
   return (
     <>
       <Navbar />
-      <section className="flex items-center justify-between mx-[1.5rem] my-[2rem] overflow-hidden max-lg:flex-wrap max-lg:gap-4">
+      <section className="flex items-center justify-between mx-[1.5rem] my-[2rem]">
         <h1 className="font-bold text-[24px]">Dashboard</h1>
         <div className="flex items-center gap-[1.5rem]">
           <ReportAiButton
@@ -47,7 +47,7 @@ const DashboardPage = async ({ searchParams }: PageProps) => {
           <TimeSelect />
         </div>
       </section>
-      <section className="flex gap-4 w-full max-lg:flex-col overflow-hidden">
+      <section className="flex gap-4 w-full">
         <SummaryCard
           month={month}
           userCanAddTransaction={userCanAddTransaction}

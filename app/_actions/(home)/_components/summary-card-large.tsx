@@ -54,7 +54,7 @@ const SummaryCardLarge = async ({ month }: SummaryCards) => {
           <p className="font-normal text-[#ffffffb7]">Saldo</p>
         </div>
         <div className="flex items-center gap-2">
-          <h2 className="font-bold text-[36px]">R${!balance ? 0 : balance}</h2>
+          <h2 className="font-bold text-[36px]">R${balance}</h2>
           <Eye width={24} />
         </div>
       </div>

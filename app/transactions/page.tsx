@@ -26,9 +26,7 @@ const TransactionsPage = async () => {
 
   const userCanAddTransaction = await canUserAddTransaction();
 
-  // acessar as transasões
   return (
-    // titulo e botão
     <>
       <Navbar />
       <main>

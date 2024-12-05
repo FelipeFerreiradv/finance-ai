@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
         </div>
         <Link
-          href="/dashboard/?month=9"
+          href="/dashboard/?month=12"
           className={
             pathname === '/dashboard'
               ? 'text-[#55B02E] font-bold'

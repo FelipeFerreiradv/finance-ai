@@ -18,6 +18,7 @@ const Navbar = () => {
             height={60}
           />
         </div>
+<<<<<<< HEAD
         <div className="flex items-center gap-[4rem] max-md:hidden">
           <Link
             href="/dashboard/?month=9"
@@ -50,6 +51,9 @@ const Navbar = () => {
             Assinatura
           </Link>
         </div>
+=======
+
+>>>>>>> parent of d8164d6 (feat: add a responsive design style)
         <Link
           href="/dashboard/?month=9"
           className={

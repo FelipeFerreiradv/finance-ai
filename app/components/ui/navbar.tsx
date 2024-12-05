@@ -18,6 +18,7 @@ const Navbar = () => {
             height={60}
           />
         </div>
+<<<<<<< HEAD
         <div className="flex items-center gap-[4rem] max-md:hidden">
           <Link
             href="/dashboard/?month=9"
@@ -52,6 +53,11 @@ const Navbar = () => {
         </div>
         <Link
           href="/dashboard/?month=12"
+=======
+
+        <Link
+          href="/dashboard/?month=9"
+>>>>>>> parent of d8164d6 (feat: add a responsive design style)
           className={
             pathname === '/dashboard'
               ? 'text-[#55B02E] font-bold'

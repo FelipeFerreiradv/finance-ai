@@ -45,7 +45,7 @@ const SummaryCardLarge = async ({ month }: SummaryCards) => {
 
   const userCanAddTransaction = await canUserAddTransaction();
   return (
-    <div className="relative flex justify-between w-full h-[160px] px-[2rem] py-[2.5rem] rounded-[20px] border bg-[#FFFFFF14]">
+    <div className="relative flex justify-between w-full h-[160px] px-[2rem] py-[2.5rem] rounded-[20px] border bg-[#FFFFFF14] max-lg:w-[86%]">
       <div className="flex flex-col justify-between gap-[1rem]">
         <div className="flex items-center gap-[.5rem]">
           <div className="flex items-center justify-center w-[36px] h-[36px] p-[10px] rounded-[8px] bg-[#0F0E11]">

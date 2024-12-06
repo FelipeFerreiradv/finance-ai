@@ -23,7 +23,7 @@ const ExpensesPerCategory = ({
   expensePerCategory,
 }: TransactionsPercentChartProps) => {
   return (
-    <ScrollArea className="h-[550px] w-full rounded-[20px] border p-4">
+    <ScrollArea className="h-[550px] w-full rounded-[20px] border p-4 max-lg:w-[86%]">
       <div className="flex flex-col m-4 gap-6">
         <h1 className="font-bold text-[18px]">Gastos por categoria</h1>
         <div className="w-full h-[.1px] border bg-[#FFFFFF14]"></div>

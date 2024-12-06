@@ -27,7 +27,7 @@ const AddTransactionButton = ({
           <TooltipTrigger>
             <Button
               variant={'outline'}
-              className="w-[180px] h-[35px] rounded-full font-bold bg-[#55B02E]"
+              className="w-[180px] h-[35px] rounded-full font-bold bg-[#55B02E] max-sm:w-[130px] max-sm:text-[9px]"
               onClick={() => setDialogOpen(true)}
               disabled={!userCanAddTransaction}
             >

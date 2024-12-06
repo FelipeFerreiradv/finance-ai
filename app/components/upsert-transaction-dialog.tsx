@@ -147,7 +147,7 @@ const UpsertTransactionDialog = ({
       }}
     >
       <DialogTrigger></DialogTrigger>
-      <DialogContent className="flex flex-col">
+      <DialogContent className="flex flex-col max-sm: w-[300px]">
         <DialogHeader className="flex flex-col items-center justify-center">
           <DialogTitle className="font-bold text-[20px]">
             {isUpdate ? 'Atualizar ' : 'Adicionar '}

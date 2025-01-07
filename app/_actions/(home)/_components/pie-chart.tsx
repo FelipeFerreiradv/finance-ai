@@ -88,7 +88,7 @@ const PieChartTransaction = ({
               <p className="font-normal text-[14px] text-[#71717A]">Receita</p>
             </div>
             <div className="font-large text-[14px]">
-              {typesPercentage ? 0 : typesPercentage[TransactionType.EXPENSE]}%
+              {typesPercentage ? typesPercentage[TransactionType.DEPOSITE] : 0}%
             </div>
           </div>
           <div className="flex items-center justify-between w-full">
@@ -99,7 +99,7 @@ const PieChartTransaction = ({
               <p className="font-normal text-[14px] text-[#71717A]">Despezas</p>
             </div>
             <div className="font-large text-[14px]">
-              {typesPercentage ? 0 : typesPercentage[TransactionType.EXPENSE]}%
+              {typesPercentage ? typesPercentage[TransactionType.EXPENSE] : 0}%
             </div>
           </div>
           <div className="flex items-center justify-between w-full">
@@ -112,7 +112,10 @@ const PieChartTransaction = ({
               </p>
             </div>
             <div className="font-large text-[14px]">
-              {typesPercentage ? 0 : typesPercentage[TransactionType.EXPENSE]}%
+              {typesPercentage
+                ? typesPercentage[TransactionType.INVESTIMENT]
+                : 0}
+              %
             </div>
           </div>
         </div>
